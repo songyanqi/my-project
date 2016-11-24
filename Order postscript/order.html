@@ -1,0 +1,458 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="https://www.ebuy365.com/views/ebuy365/skin/default/css/index.css?201607271153"/>
+	<link rel="stylesheet" href="https://www.ebuy365.com/views/ebuy365/skin/default/css/tbase.css?20160105"/>
+	<link rel="stylesheet" href="https://www.ebuy365.com/views/ebuy365/skin/default/css/lightbox.min.css"/>
+	<link rel="stylesheet" href="https://www.ebuy365.com/public/asset/css/font-awesome.min.css">
+	<link rel="shortcut icon" href="https://www.ebuy365.com/views/ebuy365/skin/default/images/shortcut.png" type="image/png" />
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+</head>
+<body>
+	<div id="header" style="">
+    <div class="theadtop">
+        <div class="ttop ng-scope" ng-controller="loginController">
+            <div class="container">
+                <div class="ttop_l">
+                    <span id="loginstr" ng-show="userInfo.isLogged" class="">
+                        <span class="top_tit">欢迎您, <span ng-bind="userInfo.user.name" class="ng-binding">songyanqi</span></span>
+                        <a href="/simple/logout" class="a_href">安全退出</a>
+                    </span>
+                    <span class="announceSpan">
+                        <span class="top_tit" style="color: #ff647c;margin-left: 10px">公告:</span>
+                        <ul class="announceList" style="margin-top: 0px;">
+						<li>
+                            <a target="_blank" href="/notice-48.html" style="color: #ff647c;margin-left: 10px">关于日本直邮和美国直邮运费标准调整的通知</a>
+                        </li><li>
+                            <a target="_blank" href="/notice-36.html" style="color: #ff647c;margin-left: 10px">关于海淘关税税率调整的提醒</a>
+                        </li><li>
+                            <a target="_blank" href="/notice-50.html" style="color: #ff647c;margin-left: 10px">黑五2016！2016黑色星期五时间，黑五是什么意思，黑五买什么海淘攻略</a>
+                        </li><li>
+                            <a target="_blank" href="/notice-49.html" style="color: #ff647c;margin-left: 10px">邀请好友注册得好礼，送您20元运费券！</a>
+                        </li></ul>
+                    </span>
+                </div>
+                <div class="ttop_r">
+                    <ul>
+                        <li class="ttop_li_po" id="myAccountDown" ng-show="userInfo.isLogged">
+                            <p class="ttop_more">
+                                <a href="/ucenter/index">会员中心</a>
+                            </p>
+
+                            <div class="ttop_li_cont" id="myAccountMenu">
+                                <p><a href="/ucenter/redpacket">运费券</a></p>
+                                <p><a href="/ucenter/address">地址管理</a></p>
+                                <p><a href="/logout.html">安全退出</a></p>
+                            </div>
+                        </li>
+                        <li><a href="/ucenter/favorite">收藏夹</a></li>
+                        <li><a href="/ucenter/order">我的订单</a></li>
+                        <li><a href="/cart" class="cart"><i class="fa fa-shopping-cart"></i> 我的购物车(<b name="mycart_count" ng-bind="userInfo.cart.count" class="ng-binding">1</b>)</a></li>
+
+                        <li ng-hide="userInfo.isLogged" class="ng-hide"><a href="/reg.html?callback=" class="register">免费注册</a></li>
+                        <li ng-hide="userInfo.isLogged" class="ng-hide">欢迎您, <a href="/login.html?callback=" class="a_href">请登录</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="header">
+        <div class="container">
+            <div class="logo"><a href="/"></a></div>
+            <div class="search">
+                <div class="search_count">
+                    <form method="get" action="/index.php" id="global-search" class="ng-pristine ng-valid">
+                        <input type="hidden" name="controller" value="site">
+                        <input type="hidden" name="action" value="search_list">
+                        <div class="search_c_input">
+                            <input type="text" name="word" autocomplete="off" placeholder="输入国外网站商品链接，感受EBUY海淘一键淘黑科技">
+                        </div>
+                        <input class="a_search btn-search" type="submit" value="搜 索">
+                    </form>
+                    <div class="search-process hide">
+                        <div class="search-process-track">
+                            <div class="search-process-bar">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="search_tips"><a href="/notice-3.html" target="_blank">输入国外网站商品链接即可一键下单，点击查看支持网站列表及攻略</a></div>
+            </div>
+
+            <div class="slogan">
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="navigation-bar">
+    <div class="navigation_wrapper">
+        <div class="navigation" id="nav">
+            <div class="nav_list">
+                <ul>
+                    <li><a href="/index.html">首页</a></li>
+                    <li><a href="/amazon.html">美亚</a></li>
+                    <li><a href="/amazon-uk.html">英亚</a></li>
+                    <li><a href="/amazon-jp.html">日亚</a></li>
+                    <li><a href="/6pm.html">6PM</a></li>
+                    <li><a href="/newbalance-outlet.html">New Balance折扣店</a></li>
+                    <li><a href="/jomashop.html">jomashop</a></li>
+                    <li><a href="/levi.html">Levis</a></li>
+                    <li><a href="/ralphlauren.html">拉夫劳伦</a></li>
+                    <li><a href="/gnc.html">GNC</a></li>
+                    <li><a href="/shaidan.html">用户晒单</a></li>
+                </ul>
+            </div>
+            <a href="javascript:void(0)" class="nav"><i class="fa fa-align-justify"></i> 全部商品分类</a>
+            <div class="main_menu hidden">
+                <div class="main_menu_list">
+                    <ul>
+                                                
+                                                <li class="icon1">
+                            <a target="_blank" href="/list-1.html">
+                                手表饰品</a>
+                        </li>
+                        
+                                                <li class="icon2">
+                            <a target="_blank" href="/list-2.html">
+                                母婴用品</a>
+                        </li>
+                        
+                                                <li class="icon3">
+                            <a target="_blank" href="/list-3.html">
+                                美妆个护</a>
+                        </li>
+                        
+                                                <li class="icon4">
+                            <a target="_blank" href="/list-4.html">
+                                食品保健</a>
+                        </li>
+                        
+                                                <li class="icon5">
+                            <a target="_blank" href="/list-5.html">
+                                服饰鞋靴</a>
+                        </li>
+                        
+                                                <li class="icon6">
+                            <a target="_blank" href="/list-6.html">
+                                箱包手袋</a>
+                        </li>
+                        
+                                                <li class="icon7">
+                            <a target="_blank" href="/list-7.html">
+                                家居生活</a>
+                        </li>
+                        
+                                                <li class="icon8">
+                            <a target="_blank" href="/list-8.html">
+                                数码电子</a>
+                        </li>
+                        
+                                                <li class="icon9">
+                            <a target="_blank" href="/list-9.html">
+                                运动户外</a>
+                        </li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="wrapper clearfix container">
+	<div class="position mt_10"><span>您当前的位置：</span> <a href="/"> 首页</a> » 填写核对订单信息</div>
+	<div class="flow_step_no2 flow_cart">
+		<ul>
+			<li class="step_1">1、查看购物车</li>
+			<li class="step_2">2、填写核对订单信息</li>
+			<li class="step_3">3、成功提交订单</li>
+		</ul>
+	</div>
+
+    <form action="/cart-tj.html" method="post" name="order_form" callback="orderFormInstance.isSubmit();" class="ng-pristine ng-valid" novalidate="true">
+
+        <input type="hidden" name="id_card_front_url" value="">
+        <input type="hidden" name="id_card_back_url" value="">
+		<input type="hidden" name="timeKey" value="1479265499">
+		<input type="hidden" name="direct_gid" value="">
+		<input type="hidden" name="direct_type" value="">
+		<input type="hidden" name="direct_num" value="">
+		<input type="hidden" name="direct_sku" value="">
+		<input type="hidden" name="direct_promo" value="">
+		<input type="hidden" name="direct_active_id" value="">
+
+    	<input type="hidden" name="addr_id" id="addr_id" value="">
+    	<input type="hidden" name="default" value="1">
+		<div class="cart_box m_10">
+			<div class="title">填写并核对订单信息</div>
+			<div class="cont">
+
+				<!--地址管理 开始-->
+				<div class="wrap_box">
+					<h3>
+						<span class="orange">收货人信息</span>
+					</h3>
+
+					<!--地址展示 开始-->
+
+					<!--收货表单信息 开始-->
+					<div class="prompt_4 m_10" id="address_often">
+						<strong>常用收货地址</strong>
+						<ul class="addr_list">
+							<li>
+								<label><input type="radio" name="radio_address" class="add_address" onclick="orderFormInstance.addressFormInit();" value=""> 其他收货地址</label>
+							</li>
+						</ul>
+
+						<!--收货地址项模板-->
+						<script type="text/html" id="addressLiTemplate">
+						<li>
+							<input id="address<%=item['id']%>" class="radio" name="radio_address" type="radio" value="<%=item['id']%>" onclick='orderFormInstance.addressSelected(<%=item["id"]%>);' />
+							<label for="address<%=item['id']%>" ><%=item['accept_name']%>&nbsp;&nbsp;&nbsp;&nbsp;<%=item['province_val']%> <%=item['city_val']%> <%=item['area_val']%> <%=item['address']%>&nbsp;&nbsp;&nbsp;&nbsp;</label>
+							<a class="font-size-sm" href="javascript:void(0)" id='addressToggleButton' onclick="orderFormInstance.addressEdit(<%=item['id']%>);">[修改]</a>
+							<input type="hidden" id="addressItem<%=item['id']%>" value='<%=jsonToString(item)%>' />
+						</li>
+						</script>
+					</div>
+
+					<div class="box" id="address_form" style="">
+						<table class="form_table">
+							<colgroup><col width="90px">
+							<col>
+
+							</colgroup><tbody>
+								<tr>
+									<th>收货人姓名：</th><td><input class="normal" type="text" name="accept_name" pattern="required" alt="收件人姓名不能为空"> <span>(*) 收货人的姓名</span> </td>
+								</tr>
+								<tr>
+									<th>省份：</th>
+									<td>
+										<select name="province" id="area01" child="city,area" onchange="areaChangeCallback(this);"><option value="">请选择</option><option value="110000">北京市</option><option value="120000">天津市</option><option value="130000">河北省</option><option value="140000">山西省</option><option value="150000">内蒙古自治区</option><option value="210000">辽宁省</option><option value="220000">吉林省</option><option value="230000">黑龙江省</option><option value="310000">上海市</option><option value="320000">江苏省</option><option value="330000">浙江省</option><option value="340000">安徽省</option><option value="350000">福建省</option><option value="360000">江西省</option><option value="370000">山东省</option><option value="410000">河南省</option><option value="420000">湖北省</option><option value="430000">湖南省</option><option value="440000">广东省</option><option value="450000">广西壮族自治区</option><option value="460000">海南省</option><option value="500000">重庆市</option><option value="510000">四川省</option><option value="520000">贵州省</option><option value="530000">云南省</option><option value="540000">西藏自治区</option><option value="610000">陕西省</option><option value="620000">甘肃省</option><option value="630000">青海省</option><option value="640000">宁夏回族自治区</option><option value="650000">新疆维吾尔自治区</option><option value="710000">台湾省</option><option value="810000">香港特别行政区</option><option value="820000">澳门特别行政区</option></select>
+										<select name="city" id="area02" child="area" parent="province" onchange="areaChangeCallback(this);"></select>
+										<select name="area" id="area03" parent="city" pattern="required" alt="请选择收货地区"></select>
+										<span>(*) 收货地区</span>
+									</td>
+								</tr>
+								<tr>
+									<th>地址：</th><td><input class="normal" name="address" type="text" alt="格式不正确" pattern="required"> <span>(*) 收货地址</span></td>
+								</tr>
+								<tr>
+									<th>手机号码：</th><td><input class="middle" name="mobile" type="text" pattern="mobi" alt="格式不正确"> <span>(*) 收货人的手机号，用于接收发货通知短信及送货前确认</span></td>
+								</tr>
+								<tr>
+									<th>固定电话：</th><td><input class="middle" type="text" pattern="phone" name="telphone" empty="" alt="格式不正确"></td>
+								</tr>
+								<tr>
+									<th>邮政编码：</th><td><input class="middle" name="zip" id="zipCode" type="text" pattern="zip" alt="格式不正确"></td>
+								</tr>
+								<tr>
+									<th>身份证号：</th><td><input name="id_card_number" class="normal" type="text" pattern="required" alt="身份证号码不正确"><span>(*) 请上传身份证信息，海关需要</span></td>
+								</tr>
+								<tr class="id_card ">
+									<th>身份证正面：</th><td><input type="file" name="id_card_front" on=""> 如暂时没有照片，可先提交订单，稍候再上传。照片大小请不要超过2M。</td>
+								</tr>
+								<tr class="id_card">
+									<th>身份证反面：</th><td><input type="file" name="id_card_back"></td>
+								</tr>
+																<tr>
+									<th></th><td><label class="btn_orange3" id="address_save_button"><input type="button" value="保存收货地址" onclick="return address_default_save();"></label></td>
+
+								</tr>
+															</tbody>
+						</table>
+					</div>
+					<!--收货表单信息 结束-->
+				</div>
+				<!--地址管理 结束-->
+
+				<div class="hr"></div>
+
+				<!--配送方式 开始-->
+				<div class="wrap_box" id="deliveryBox" style="display:none">
+					<h3>
+						<span class="orange">配送方式</span>
+					</h3>
+
+					<div class="t_c red hide" id="delivery-error">
+						您似乎选择了无法一起配送的商品，请尝试分开下单：）
+
+						<br>
+						<br>
+						<a href="/cart" class="btn3">修改购物车</a>
+					</div>
+
+					<div class="delivery-wrapper">
+
+					<!--配送展示 开始-->
+					<table class="form_table" id="delivery_show_box" style="display:none">
+						<colgroup><col width="120px">
+						<col>
+
+						</colgroup><tbody id="deliveryShowBox"></tbody>
+
+						<!--配送方式展示模板-->
+						<script type="delivery" id="deliveryShowTemplate">
+						<tr>
+							<th>配送方式：</th><td><%=name%></td>
+						</tr>
+						<tr>
+							<th>运费：</th><td>¥<%=price%></td>
+						</tr>
+						</script>
+					</table>
+					<!--配送展示 结束-->
+
+					<!--配送修改 开始-->
+					<table width="100%" class="border_table m_10" id="delivery_form">
+						<colgroup><col width="180px">
+						<col>
+
+						</colgroup><tbody id="deliveryFormTrBox"><tr>
+							<th><label><input type="radio" name="delivery_id" paytype="0" alt="50.00" value="13" onclick="orderFormInstance.deliverySelected({&quot;id&quot;:&quot;13&quot;,&quot;name&quot;:&quot;美国直邮&quot;,&quot;type&quot;:&quot;0&quot;,&quot;description&quot;:&quot;&quot;,&quot;if_delivery&quot;:&quot;0&quot;,&quot;price&quot;:&quot;50.00&quot;,&quot;protect_price&quot;:&quot;30.00&quot;});"> 美国直邮</label></th>
+							<td>
+								 运费：¥50.00 &nbsp;&nbsp;
+								
+									<label><input type="checkbox" onclick="orderFormInstance.doAccount();" name="insured" value="30.00">保价：¥30.00</label>
+								
+							</td>
+						</tr></tbody>
+
+						<script type="text/html" id="deliveryTrTemplate">
+						<tr>
+							<th><label><input type="radio" name="delivery_id" paytype="<%=item['type']%>" alt="<%=item['price']%>" value="<%=item['id']%>" <%if(item['if_delivery'] == 1){%>disabled="disabled" title="无法送达"<%}%> onclick='orderFormInstance.deliverySelected(<%=jsonToString(item)%>);' /> <%=item['name']%></label></th>
+							<td>
+								<%=item['description']%> 运费：¥<%=item['price']%> &nbsp;&nbsp;
+								<%if(item['protect_price'] > 0){%>
+									<label><input type="checkbox" onclick="orderFormInstance.doAccount();" name="insured" value="<%=item['protect_price']%>" />保价：¥<%=item['protect_price']%></label>
+								<%}%>
+							</td>
+						</tr>
+						</script>
+
+						<tfoot>
+						<tr><th>温馨提示：</th>
+						<td>
+							运费为预收500g首重，超重需要补交运费，具体请见 <a href="/help-56.html" target="_blank">运费说明</a>
+						</td>
+						</tr></tfoot>
+
+						<!--<tfoot>-->
+							<!--<th>指定送货时间：</th>-->
+							<!--<td>-->
+								<!--<label class='attr'><input type='radio' name='accept_time' checked="checked" value='任意' /> 任意</label>-->
+								<!--<label class='attr'><input type='radio' name='accept_time' value='周一到周五' /> 周一到周五</label>-->
+								<!--<label class='attr'><input type='radio' name='accept_time' value='周末' /> 周末</label>-->
+							<!--</td>-->
+						<!--</tfoot>-->
+					</table>
+					<!--配送修改 结束-->
+					</div>
+				</div>
+				<!--配送方式 结束-->
+
+				<div class="hr"></div>
+				<!--增值服务 开始-->
+				<div class="wrap_box" id="deliveryBox">
+					<h3>
+						<span class="orange">增值服务</span>
+					</h3>
+					<div class="delivery-wrapper">
+					<table width="100%" class="border_table m_10" id="delivery_form">
+						<colgroup><col width="180px"><col>
+						</colgroup><tbody><tr>
+							<th>加固类型</th>
+							<td>
+								<label><input type="radio" name="firm_type" value="0" alt="0" checked="" onclick="orderFormInstance.doAccount();"> 不加固</label> &nbsp;&nbsp;
+								<label><input type="radio" name="firm_type" value="1" alt="5" onclick="orderFormInstance.doAccount();"> 基础加固</label> &nbsp;&nbsp;
+								<label><input type="radio" name="firm_type" value="2" alt="10" onclick="orderFormInstance.doAccount();"> 特殊加固</label> &nbsp;&nbsp;
+							</td>
+						</tr>
+						<tr style="display:none;">
+							<th>取出小票</th>
+							<td>
+								<label><input type="radio" name="removed_invoice" value="0" alt="0" checked="" onclick="orderFormInstance.doAccount();">否</label> &nbsp;&nbsp;
+								<label><input type="radio" name="removed_invoice" value="1" alt="2" onclick="orderFormInstance.doAccount();">是</label> &nbsp;&nbsp;
+							</td>
+						</tr>
+						</tbody><tfoot>
+						<tr><th>服务说明：</th>
+						<td>基础加固：对包裹外包装进行简单的加固（5元）；<br>
+特殊加固：针对包裹内件的奢侈品、高值货品和易碎品等商品进行的特殊安全加固服务（10元）；<br>
+	<span style="display: none">取出小票：礼物等希望价格保密的货物，可以取出发票（2元）。</span>
+
+						</td>
+						</tr></tfoot>
+
+					</table>
+					</div>
+				</div>
+				<!--增值服务 结束-->
+
+				<div class="hr"></div>
+
+				<!--支付方式 开始-->
+				<div class="wrap_box" id="paymentBox" style="display: none;">
+					<h3>
+						<span class="orange">支付方式</span>
+					</h3>
+
+					<table width="100%" class="border_table" id="payment_form">
+						<colgroup><col width="200px">
+						<col>
+																		
+																								</colgroup><tbody><tr>
+							<th><label><input class="radio" name="payment" alt="0" onclick="orderFormInstance.paymentSelected({&quot;id&quot;:&quot;6&quot;,&quot;name&quot;:&quot;支付宝&quot;,&quot;type&quot;:&quot;1&quot;,&quot;class_name&quot;:&quot;direct_alipay&quot;,&quot;description&quot;:&quot;即时到帐支付方式，网上交易时，买家的交易资金直接打入卖家支付宝账户，快速回笼交易资金。 <a href=\&quot;http:\/\/www.alipay.com\/\&quot; target=\&quot;_blank\&quot;>立即申请<\/a>&quot;,&quot;logo&quot;:&quot;\/payments\/logos\/pay_alipay.gif&quot;,&quot;status&quot;:&quot;0&quot;,&quot;order&quot;:&quot;99&quot;,&quot;note&quot;:&quot;&quot;,&quot;poundage&quot;:&quot;0.00&quot;,&quot;poundage_type&quot;:&quot;1&quot;,&quot;config_param&quot;:&quot;{\&quot;M_PartnerId\&quot;:\&quot;2088511834183705\&quot;,\&quot;M_PartnerKey\&quot;:\&quot;bgjt3n6rryoul9kz21tonezf07whcl49\&quot;,\&quot;M_Email\&quot;:\&quot;partners@tiantian8.com\&quot;}&quot;});" title="支付宝" type="radio" value="6">支付宝</label></th>
+							<td> 支付手续费：¥0</td>
+						</tr>
+																													r>
+							<th><label><input class="radio" name="payment" alt="0" onclick="orderFormInstance.paymentSelected({&quot;id&quot;:&quot;12&quot;,&quot;name&quot;:&quot;微信支付&quot;,&quot;type&quot;:&quot;1&quot;,&quot;class_name&quot;:&quot;wechat_qt&quot;,&quot;description&quot;:&quot;扫码支付 模式二&quot;,&quot;logo&quot;:&quot;\/payments\/logos\/pay_wechat.gif&quot;,&quot;status&quot;:&quot;0&quot;,&quot;order&quot;:&quot;99&quot;,&quot;note&quot;:&quot;&quot;,&quot;poundage&quot;:&quot;0.00&quot;,&quot;poundage_type&quot;:&quot;1&quot;,&quot;config_param&quot;:&quot;{\&quot;M_PartnerId\&quot;:\&quot;1238744102\&quot;,\&quot;M_PartnerKey\&quot;:\&quot;1ebuy3652ebuy3653ebuy3654ebuy365\&quot;}&quot;});" title="微信支付" type="radio" value="12">微信支付</label></th>
+							<td> 支付手续费：¥0</td>
+						</tr>
+					<table class="form_table" id="payment_show_box" style="display:none">
+						<colgroup><col width="120px">
+						<col>
+						</colgroup><tbody id="paymentShowBox"></tbody>
+					</table>
+
+					<!--支付方式模板-->
+					<script type="text/html" id="paymentShowTemplate">
+						<tr>
+							<th>支付方式：</th>
+							<td><%=name%></td>
+						</tr>
+					</script>
+				</div>
+				<!--支付方式 结束-->
+
+				<div class="hr"></div>
+				<!--===========================================订单留言 开始=============================-->
+				<div class="wrap_box">
+					<h3>
+						<span class="orange">订单附言</span>
+					</h3>
+					<table width="100%" class="border_table" id="message_show_box">
+						<colgroup><col width="120px">
+						<col>
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>订单附言：</th>
+								<td id="user-message">
+									<textarea name="message" placeholder="填写您的特殊要求或商家优惠码，例：美亚8折码ABCDEFG"></textarea><br/>
+									<input type="checkbox" name="usr-agree" class="usr-check"/>
+									<span class="check-span">优惠码无法使用时不接受原价下单</span>
+									<span class="bg-span">
+										<div class="hover-wrap">
+											<p class="hover-content">若备注的优惠码可用，我们会在下单成功后三小时内将折扣差额自动退还到您的账户余额；若您不接受原价下单，折扣码不可用时，则为您取消订单并退款。
+											</p>
+										<div>
+									</span>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				
+				<!--=======================订单留言 结束==============================-->
+ 				
+</body>
+</html>

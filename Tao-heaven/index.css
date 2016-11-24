@@ -1,0 +1,481 @@
+
+/*清除浮动的方法*/
+.clearfix{
+	clear: both;
+	overflow: hidden;
+	*zoom: 1;
+}
+
+/*=============top================*/
+.bond-wrap{
+	width: 1225px;
+	height: 100%;
+	margin: 0 auto;
+}
+.bond-top h3{
+	text-align: center;
+	padding: 60px 0 45px;
+	color: #333333;
+	font-size: 22px;
+}
+.bond-line{
+	width:4px;
+	height:20px;
+	float: left;
+	margin-top:5px;
+	background: #010101;
+}
+ .bond-con{
+ 	float: left;
+	height:30px;
+	text-indent: 10px;
+	font-size:20px;
+	color: #010101;
+}
+/*=========图片============*/
+.bond-pic{
+	width: 1121px;
+	margin:55px auto 53px;
+}
+.bond-pic-left{
+	width:513px;
+	height: 397px;
+	float: left;
+	margin-right:233px;
+}
+.bond-pic-left img{
+	width: 100%;
+	height: 100%;
+	display: block;
+	max-width: 100%;
+}
+.bond-pic-right{
+	width: 375px;
+	height: 403px;
+	float: left;
+}
+.bond-pic-right img{
+	display: block;
+	width:100%;
+	height:100%;
+	max-width: 100%;
+}
+/*==============用品=======================*/
+.bond-shop{
+	margin:25px 0 53px;
+}
+.bond-shop .bond-shop-left{
+	width:768px;
+	padding: 0 20px;
+	float: left;
+}
+/*右侧图片*/
+.bond-shop .bond-shop-right{
+	width:417px;
+	height:397px;
+	float: left;
+}
+.bond-shop .bond-shop-right img{
+	display: block;
+	width:100%;
+	height:100%;
+	max-width: 100%;
+}
+/*左侧样式*/
+.bond-kind{
+	height: 176px;
+	width:198px;
+	float:left;
+	margin: 0 77px 48px 0;
+}
+.bond-kind-last{
+	margin-right:20px;
+}
+.bond-kind h3{
+	padding:14px 0 9px 0;
+	font-size: 18px;
+}
+
+.mom-h{
+	color: #EA8010;
+}
+.luxury-h{
+	color: #8829Ac;
+}
+.beauty-h{
+	color: #EB4F38;
+}
+.health-h{
+	color:#0E6EcB ;
+}
+.makeup-h{
+	color: #0E932E;
+}
+.bond-kind p,{
+	line-height: 24px;
+}
+.bond-kind span{
+	color: #333333;
+	padding-right: 10px;
+	font-size:14px;
+}
+
+.bond-kind-type{
+	margin-left: 10px;
+	width: 54px;
+	height: 54px;
+}
+.bond-pic-left .bind-kind-type img{
+	display: block;
+	width:100%;
+	height:100%;
+	max-width: 100%;
+}
+
+.bond-pics{
+	width:1117px;
+	height: 161px;
+	margin:0 auto 98px;
+}
+.bond-pics img{
+	display: block;
+	width: 100%;
+	height: 100%;
+	max-width: 100%;
+}
+.bond-content{
+	line-height:34px;
+	height: 102px;
+	text-indent: 10px;
+	font-size:20px;
+	color: #010101;
+}
+/*===========地图===================*/
+.bond-map{
+	width: 1023px;
+	height:460px;
+	margin:46px auto 67px;
+	background:url(img/bond_map.png) no-repeat center;
+}
+.bond-add{
+	height:42px;
+	width:824px;
+	margin: 83px auto 20px;
+}
+.bond-add p{
+	width: 252px;
+	height: 42px;
+	float: left;
+	font-size: 28px;
+	color: #000000;
+}
+.bond-add-p{
+	margin-right:320px ;
+}
+.bond-maps-bt{
+	width: 1110px;
+	height: 313px;
+	margin: 0 auto 120px;
+}
+.bond-maps-bt img{
+	display: block;
+	width: 100%;
+	height: 100%;
+	max-width:100%;
+}
+/*=================Solicite页面==============================*/
+.solicit-wrap{
+	width: 1225px;
+	height: 100%;
+	margin: 0 auto;
+}
+.solicit-h{
+	font-size: 22px;
+	color: #333333;
+	margin: 40px 0 45px 0;
+	text-align: center;
+}
+
+.solicit-main .solicit-left{
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	width:687px;
+	height: 331px;
+	margin-right:12px;
+	border:1px solid #bfbfbf;
+	float: left;
+}
+.solicit-left p{
+	font-size:14px;
+	color: #222324;
+	line-height: 34px;
+	padding: 20px 35px 0 32px;
+}
+.solicit-p-two{
+	text-indent:2em;
+	margin-bottom: 14px;
+}
+.solicit-p-three{
+	text-indent:2em;
+}
+.solicit-main .solicit-right{
+	width:526px;
+	height: 331px;
+	float: left;
+	background: yellow;
+}
+.solicit-main .solicit-right img{
+	width: 100%;
+	height: 100%;
+	max-width: 100%;
+	display: block;
+}
+/*===================ul列表=================*/
+.solicit-box{
+	box-sizing: border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	border:1px solid #bfbfbf;
+	margin: 12px auto 60px;	
+}
+.solicit-center{
+	width: 996px;
+	padding:20px 0 40px 0;
+	margin: 0 auto;	
+}
+.solicit-center .solicit-kind{
+	float: left;
+}
+.solicit-center .solicit-kind-one{
+	width:132px;
+}
+.solicit-center .solicit-kind-two{
+	width:76px;
+	margin:0 118px 0 108px;
+}
+.solicit-center .solicit-kind-three{
+	width:142px;
+}
+.solicit-center .solicit-kind-four{
+	width:132px;
+	margin: 0 105px 0 78px;
+}
+.solicit-center .solicit-kind-five{
+	width:104px;
+}
+.solicit-kind h3{
+	padding-bottom:10px;
+	font-size:18px;	
+}
+.solicit-kind p{
+	line-height: 25px;
+}
+/*=============图标================*/
+.solicit-kind-type{
+	width: 54px;
+	height: 54px;
+	margin-left:10px;
+}
+.solicit-kind-type img{
+	display: block;
+	width: 100%;
+	height: 100%;
+	max-width: 100%;
+}
+.solicit-kind span{
+	color: #222324;
+	padding-right: 10px;
+	font-size:14px;
+}
+/*====统计图片====*/
+.solicit-prospect-left{
+	width: 352px;
+	float: left;
+}
+.solicit-bg{
+	text-align: center;
+	font-size:18px;
+	color: #ffffff;
+	line-height:35px;
+	width:174px;
+	height: 44px;
+}
+.solicit-prospect-text{
+	background: url(img/solicit_one.png) no-repeat left;
+}
+.solicit-prospect-left p{
+	text-indent:2em;
+	line-height: 34px;
+	font-size:14px;
+	color: #222324;
+	padding-left: 12px;
+	
+}
+
+.solicit-prospect-center{
+	width:438px;
+	height: 271px;
+	margin: 0 30px 0 55px;
+	float: left;	
+}
+.solicit-prospect-center img{
+	display: block;
+	width:100%;
+	height: 100%;
+	max-width:100%;
+	
+}
+
+.solicit-prospect-right{
+	width:350px;
+	height: 271px;
+	float: left;
+}
+.solicit-prospect-right img{
+	display: block;
+	width:100%;
+	height: 100%;
+	max-width:100%;
+}
+.solicit-operate{
+	margin: 78px 0 35px 0;
+}
+.solicit-operate .solicit-operate-left{
+	width: 330px;
+	float: left;
+}
+.solicit-operate-text{
+	background: url(img/solicit_two.png) no-repeat left;
+}
+.solicit-operate .solicit-operate-left p{
+	line-height: 34px;
+	padding-left: 42px;
+	font-size: 18px;
+	color: #222324;
+}
+.solicit-operate .solicit-operate-right{
+	margin-top:48px;
+	width: 649px;
+	height: 414px;
+	float: left;
+}
+
+/*距离底部距离*/
+.solicit-way{
+	margin-bottom:90px;
+}
+.solicit-operate-right img,.solicit-policy-pic img,.solicit-model-pic img,.solicit-image-one img,.solicit-image-two img,.solicit-flow-form img,.solicit-way-em img{
+	display: block;
+	width: 100%;
+	height: 100%;
+	max-width: 100%;
+}
+.solicit-operate-p{
+	margin-top: 22px;
+}
+.solicit-policy .solicit-policy-text{
+	background: url(img/solicit_three.png) no-repeat left;
+}
+.solicit-policy-pic{
+	width: 1047px;
+	height: 190px;
+	margin:0 0 30px 120px;
+}
+
+.solicit-criteria-text{
+	background: url(img/solicit_four.png) no-repeat left;
+}
+.solicit-criteria-list{
+	margin: 20px 0 52px 0;
+}
+.solicit-criteria-list li{
+	margin-bottom:13px;
+}
+.solicit-criteria-list li img{
+	display: block;
+	width: 41px;
+	height: 40px;
+	float: left;
+}
+.solicit-criteria-list li P{
+	font-size: 16px;
+	line-height:40px;
+	text-indent: 20px;
+	color: #333333;
+	float: left;
+}
+.solicit-one{
+	margin-left:255px;
+}
+.solicit-two{
+	margin-left: 226px;
+}
+.solicit-three{
+	margin-left: 197px;
+}
+.solicit-four{
+	margin-left:323px;
+}
+.solicit-five{
+	margin-left: 293px;
+}
+.solicit-six{
+	margin-left: 264px;
+}
+.solicit-seven{
+	margin-left:702px;
+}
+.solicit-criteria-list li .solicit-seven-p{
+	font-size: 20px;
+	color: #DD3646;
+}
+/*加盟模式*/
+.solicit-model-text{
+	background: url(img/solicit_five.png) no-repeat left;
+}
+.solicit-model-pic{
+	width: 528px;
+	height: 112px;
+	margin:0 0 26px 278px;
+}
+.solicit-image-one{
+	float: left;
+	width: 528px;
+	height: 112px;
+	margin: 0 35px 0 68px;
+}
+
+.solicit-image-two{
+	float: left;
+	width: 528px;
+	height: 112px;
+}
+/*加盟流程*/
+.solicit-flow{
+	margin: 125px 0 60px 0;
+}
+.solicit-flow-text{
+	background: url(img/solicit_six.png) no-repeat left;
+}
+.solicit-flow-form{
+	width: 826px;
+	height: 330px;
+	margin:10px auto 0;
+}
+.solicit-way-text{
+	background: url(img/solicit_seven.png) no-repeat left;
+	margin-bottom: 50px;
+}
+.solicit-way-em{
+	width:88px;
+	height: 84px;
+	float: left;
+	margin:0 43px 0 282px ;	
+}
+.solicit-way p{
+	float: left;
+	line-height: 84px;
+	font-size:24px;
+	color: #F5780A;
+}

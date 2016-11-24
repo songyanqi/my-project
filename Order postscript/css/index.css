@@ -1,0 +1,72 @@
+.l {
+  float: left;
+}
+.r {
+  float: right;
+}
+.boxs {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+#user-message {
+  padding: 12px 10px 10px;
+}
+#user-message textarea {
+  width: 960px;
+  height: 44px;
+  resize: vertical;
+  font-size: 12px;
+  color: #999999;
+  padding-top: 12px;
+  text-indent: 20px;
+  border: 1px solid #999999;
+  margin-bottom: 10px;
+}
+#user-message input[type=checkbox] {
+  border: none;
+  outline: none;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #dddddd;
+}
+#user-message .check-span {
+  color: #333333;
+  font-size: 12px;
+  margin: 0 10px;
+}
+#user-message .bg-span {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(../img/question.png) center no-repeat;
+  vertical-align: middle;
+  font-size: 12px;
+  color: #ffffff;
+}
+#user-message .bg-span:hover {
+  background: url(../img/qurestion_mark.png) center no-repeat;
+}
+#user-message .bg-span:hover .hover-wrap {
+  display: block;
+}
+.hover-wrap {
+  display: none;
+  width: 220px;
+  height: 130px;
+  margin: 26px 0 0 -100px;
+  position: relative;
+  border: 1px solid #999999;
+}
+.hover-wrap .hover-content {
+  width: 204px;
+  height: 110px;
+  position: absolute;
+  background: #ffffff;
+  left: 0;
+  top: 0;
+  padding: 20px 8px 0;
+  font-size: 12px;
+  color: #333333;
+  line-height: 21px;
+}

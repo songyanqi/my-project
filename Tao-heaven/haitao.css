@@ -1,0 +1,73 @@
+body{ font-family: "Microsoft Yahei"; font-size: 14px;}
+.inner-wrap{ width: 1225px; margin: 0 auto;}
+.page-header .header-main{ margin-left: 110px;}
+.page-header .searchbar input{ height: 44px; line-height: 44px; border: 1px solid #ff5101;}
+.page-header .searchbar button{ height: 46px; line-height: 46px; background: #ff5101; font-size: 20px;}
+.page-nav .category-wrap .category{ width: 240px; height: 50px; line-height: 50px; font-size: 20px; font-weight: bold;}
+.page-nav .nav-wrap{ padding-left: 65px; overflow: hidden;}
+.page-nav .nav-wrap a{ font-size: 20px; font-weight: bold;}
+.page-nav .minicart em{ top: 12px;}
+.page-nav .minicart a{ height: 49px; line-height: 48px; font-size: 20px;}
+.slide-left{ position: absolute; top: 50%; left: 10px; margin-top: -40px; width: 40px; height: 80px; z-index: 9;}
+	.bg{ opacity: 0.4; position: absolute; top: 0; left: 0; width: 40px; height: 80px; background: #fff;filter: progid:DXImageTransform.Microsoft.Alpha(opacity=40); z-index: 1;}
+.slide-left .click-btn{ position: absolute; top: 0; left: 0; width: 40px; height: 80px; background: url("../images/slide-left.png") no-repeat 8px center; z-index: 2;}
+.slide-right .click-btn{ position: absolute; top: 0; left: 0; width: 40px; height: 80px; background: url("../images/slide-right.png") no-repeat 8px center; z-index: 2;}
+.slide-right{ position: absolute; top: 50%; right: 10px; width: 40px; margin-top: -40px; height: 80px; z-index: 9;}
+#indexSlide .slide-item{ display: none;}
+.page-container .section{ margin-bottom: 30px;}
+.sub-tit img{ display: block;}
+.page-container .section .sidebar{ margin-right: 24px;}
+.index-floor .title{ padding-bottom: 20px;}
+.index-floor .floor-brand{ width: 238px; height: 498px;    border-style: solid;
+    border-width: 1px;}
+	.index-floor .floor-brand li{ margin-top: 40px; margin-left: 18px; float: left; width: 92px; height: 44px;}
+.index-floor1 .title i,.index-floor1 .floor-brand,.index-floor1 .floor-goods .hover,.index-floor1 .floor-goods .name a:hover, .index-floor1 .floor-hots .name a:hover{ border-color:#ff5101; color: #ff5101;}
+.index-floor2 .title i,.index-floor2 .floor-brand,.index-floor2 .floor-goods .hover,.index-floor2 .floor-goods .name a:hover, .index-floor2 .floor-hots .name a:hover{ border-color:#f4b60e; color: #f4b60e;}
+.index-floor3 .title i,.index-floor3 .floor-brand,.index-floor3 .floor-goods .hover,.index-floor3 .floor-goods .name a:hover, .index-floor3 .floor-hots .name a:hover{ border-color:#2ebe2e; color: #2ebe2e;}
+.index-floor4 .title i,.index-floor4 .floor-brand,.index-floor4 .floor-goods .hover,.index-floor4 .floor-goods .name a:hover, .index-floor4 .floor-hots .name a:hover{ border-color: #ff0078; color: #ff0078;}
+.index-floor .floor-tab{ width: 961px; overflow: hidden;}
+.index-floor .floor-goods{ width: auto; height: 500px;}
+.index-floor .floor-goods .list{ width: 970px;}
+.index-floor .floor-goods li{ margin: 0 10px 20px 0; padding: 0; width: 182px; height: 238px;}
+.index-floor .floor-goods img{ height: 150px;}
+.index-floor .title span{ font-size: 24px; padding-right: 8px;}
+.index-floor .title em{ font-size: 20px;}
+.price{ text-align: center;}
+.index-floor .floor-goods .con{ margin-top: 20px; width: 160px;}
+.index-floor .floor-goods .name{ padding-bottom: 6px;}
+.index-floor .title a{ padding-right: 16px; color: #ff5101;}
+.footer-nav{ padding: 40px 0 25px 80px;}
+.footer-nav .nav-list li{ padding-right: 96px;}
+.footer-nav .nav-list dt{ padding-bottom: 15px; line-height: 100%;}
+.footer-nav .nav-list a{ line-height: 26px;}
+.footer-nav .footer-code{ width: auto; padding: 0 20px 40px 0;}
+.footer-nav .footer-code dl{ float: left; margin-right: 60px;}
+.footer-nav .footer-code dt{}
+	.footer-nav .footer-code dt img{ display: block; width: 130px; height: 130px;}
+.footer-nav .footer-code dd{}
+	.footer-nav .footer-code dd p{ font-size: 14px;}
+.footer-copy{ padding-bottom: 52px;}
+.partner{ padding: 20px 0 50px; overflow: hidden; line-height: 50px;}
+	.partner a{ display: inline-block;}
+	.partner span{ display: inline-block; padding: 0 2px 0 6px; color: #fff;}
+	.partner i{ display: inline-block; padding: 0 9px 0 15px; color: #fff;}
+.footer-serves{ height: 70px;}
+.footer-serves dl{ height: 70px; padding: 0 62px 0 80px;}
+.footer-serves i{ width: 70px; height: 70px;}
+.footer-serves dt{ font-size: 18px; color: #666; font-weight: 400;}
+/*.footer-serves i.bg_1{ background: url("../images/footer_serves_1.png") no-repeat 0 0;}
+.footer-serves i.bg_2{ background: url("../images/footer_serves_2.png") no-repeat 0 0;}
+.footer-serves i.bg_3{ background: url("../images/footer_serves_3.png") no-repeat 0 0;}
+.footer-serves i.bg_4{ background: url("../images/footer_serves_4.png") no-repeat 0 0;}*/
+.main-slide{ height: 400px;}
+.main-slide .slide-list{ height: 400px;}
+.main-slide .slide-list li{ height: 400px; overflow: hidden;}
+.main-slide .slide-list li a{ height: 400px;}
+
+.slide-scroll{ position: relative; margin: 30px 0 60px 0; height: 338px; overflow: hidden;}
+.slide-scroll a.ad-left{ float: left; width: 612px; height: 338px;}
+.slide-scroll a.ad-right{ float: right; width: 612px; height: 338px;}
+.category-list-nav{ width: 240px; top: 52px;}
+.category-list-third{ left: 240px;}
+.page-nav .nav-wrap a{ line-height: 50px;}
+.page-nav{ height: 50px;}
