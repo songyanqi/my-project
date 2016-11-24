@@ -1,0 +1,64 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" href="https://www.ebuy365.com/views/ebuy365/skin/default/css/index.css?201607271153"/>
+		<link rel="stylesheet" href="https://www.ebuy365.com/views/ebuy365/skin/default/css/tbase.css?20160105"/>
+		<link rel="stylesheet" href="https://www.ebuy365.com/views/ebuy365/skin/default/css/lightbox.min.css"/>
+		<link rel="stylesheet" href="https://www.ebuy365.com/public/asset/css/font-awesome.min.css">
+		<link rel="shortcut icon" href="https://www.ebuy365.com/views/ebuy365/skin/default/images/shortcut.png" type="image/png" />
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+	</head>
+	<body>
+	<!-- ==========================logo部分 ===================-->
+		<div class="success-wrap">
+			<div class="success-header clearfix">
+				<a href="https://www.ebuy365.com" class="success-logo"><img src="img/login_logo.png"/></a>
+				<h3 class="success-login">注册</h3>
+			</div>
+		</div>
+		<div class="success-box">
+			<div class="success-main">
+				<div class="success-img"><img src="img/success_right.png" alt=""></div>
+				<p>注册成功！</p>
+				<a href="javascript:void(0)" title="" class="right-away">立刻逛逛</a>
+				<div class="form-register clearfix">
+					<input type="checkbox" name="usr-receive" class="b">
+					<label>您是否受邀注册成为EBUY海涛用户？</lable>
+				</div>
+			</div>
+		</div>
+		<!-- =================================弹窗========================== -->
+		<div class="invitation-wrap">
+			<div class="invitation-code">
+				<div class="invitation-header clearfix">
+					<p>填写邀请码</p>
+					<span class="close-a"><img src="img/login_close.png" alt="关闭"></span>
+				</div>
+				<form action="" class="form-invitation">
+					<div class="invitation-main clearfix">
+						<p>邀请码：</p>
+						<input type="text" name="user-name" placeholder="请填写您的邀请码" autocomplete="off">
+					</div>
+					<a href="login-success.html">确定</a>
+				</form>
+			</div>
+		</div>
+		
+		<!--=================================弹窗事件========================== -->
+	</body>
+	<script src="https://www.ebuy365.com/public/asset/js/jquery-1.11.2.min.js"></script>
+	<script src="jquery.cookie.js"></script>
+	<script>
+		$('.form-register,.b').click(function(event) {
+			$('.invitation-wrap').delay(500).show(0);
+			$('.b').prop('checked',true);
+		});
+		$('.close-a').click(function(event) {
+			$('.invitation-wrap').hide();
+			$('.b').prop('checked',false);
+		});
+	</script>
+</html>
