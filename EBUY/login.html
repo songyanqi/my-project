@@ -1,0 +1,68 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" href="https://www.ebuy365.com/views/ebuy365/skin/default/css/index.css?201607271153"/>
+		<link rel="stylesheet" href="https://www.ebuy365.com/views/ebuy365/skin/default/css/tbase.css?20160105"/>
+		<link rel="stylesheet" href="https://www.ebuy365.com/views/ebuy365/skin/default/css/lightbox.min.css"/>
+		<link rel="stylesheet" href="https://www.ebuy365.com/public/asset/css/font-awesome.min.css">
+		<link rel="shortcut icon" href="https://www.ebuy365.com/views/ebuy365/skin/default/images/shortcut.png" type="image/png" />
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+	</head>
+	<body>
+		<!--logo部分-->
+		<div class="login-wrap">
+			<div class="login-header clearfix">
+				<a href="https://www.ebuy365.com" class="login-logo"><img src="img/login_logo.png"/></a>
+				<h3 class="login-lg">登录</h3>
+			</div>
+		</div>
+		<!-- content部分 -->
+		<div class="login-main clearfix">
+			<!--left-->
+			<div class="login-main-left">
+				<div class="login-left-img"><img src="img/login_con.png"/></div>
+				<p>没有账号，<a href="register.html">去注册</a></p>
+			</div>
+			<!--right-->
+			<form class="login-main-right" name = "form-name" method ="" action = "" autocomplete="on">
+				<div class="login-right-list clearfix">
+					<p class="main-num">账号</p>
+					<input type="text" name="usr-number" placeholder="请输入正确的账号" required="required"/>
+				</div>
+				<div class="login-right-list clearfix">
+					<div class="main-num">登录密码</div>
+					<input type="password" id="password" name="usr-psw" placeholder="6-32位字母+数字" required="required" maxLength="32"/>
+					<input type="text" id="passwords">
+					<!--显示图片eye-->
+					<a href="javascript:void(0)" class="login-eye"></a>
+				</div>
+				<div class="login-btn"><input type="submit" value="登录"/></div>
+				<div class="login">
+					 <a href="javascript:void(0)"><input type="checkbox" id="usr-auto" value="今日话题"/><label for="usr-auto">自动登录</label></a>
+					 <a href="Retrieve-password.html" class="login-sp">忘记密码</a>	
+				</div>
+				<a href="###" class="login-wx">微信扫码登录</a>
+			</form>
+		</div>
+		<script src="https://www.ebuy365.com/public/asset/js/jquery-1.11.2.min.js"></script>
+		<script>
+			$(function(){
+				$('.login-eye').click(function(event) {
+					$(this).toggleClass('show-u-code');
+					if($(this).hasClass('show-u-code')) {
+						$('#passwords').val($('#password').val());
+						$('#password').hide();
+						$('#passwords').show();
+					}else {
+						$('#password').val($('#passwords').val());
+						$('#passwords').hide();
+						$('#password').show();
+					}
+				});
+			})
+		</script>
+	</body>
+</html>
