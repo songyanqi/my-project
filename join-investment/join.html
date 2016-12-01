@@ -1,0 +1,555 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="generator" content="ecstore.b2c" />
+<link href="http://dev.haitaotiantang.com/public/app/site/statics/css_mini/typical.css" rel="stylesheet" media="screen, projection"/>
+<link href="http://dev.haitaotiantang.com/public/app/b2c/statics/css_mini/basic.min.css" rel="stylesheet" media="screen, projection" />
+<link rel="stylesheet" href="http://dev.haitaotiantang.com/themes/ecstore/images/styles.min.css" />
+<script src="http://shop.haitaotiantang.com/public/app/site/statics/js_mini/moo.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/index.css"/>
+<!-- <link rel="stylesheet" type="text/css" href="haitao.css"> -->
+</head>
+<body>
+	<div id="topbar" class="page-topbar">
+    <div class="inner-wrap">
+    <div class="topbar-left fl">    
+	<p class="wel fl">尊敬的顾客您好，欢迎来到海淘天堂！</p>
+	<p id="login_7" class="fl">[<a href="/index.php/passport-login.html">登录</a>,<a href="/index.php/passport-signup.html">注册</a>]</p>
+	<p id="member_7" class="small-member fl" style="display:none;">
+	  您好<span id="uname_7"></span>！<a href="/index.php/passport-logout.html">退出</a></p>
+
+<script>
+	var name = Cookie.read('UNAME') || '';
+	if(name){
+	    $("uname_7").innerHTML = name;
+	    $("member_7").setStyle('display','');
+	    $("login_7").setStyle('display','none');
+	    $$(".wel").setStyle('display','none');
+	}
+	else{
+	    $("login_7").setStyle('display','');
+	    $("member_7").setStyle('display','none');
+	}
+</script>
+        </div>
+        <ul class="topbar-right fr">
+			<li id="msgBar_8" style="display: none;"><a class="topbar topbar1" href="/index.php/member-inbox.html"><em></em>未读信息<i id="msg_num"></i></a></li>
+			<li class="spacer" style="display: none;"></li>
+			<li><a class="topbar topbar2" href="/index.php/member-orders.html"><em></em>我的订单</a></li>
+			<li class="spacer"></li>
+			<li><a class="topbar topbar3" href="/index.php/member.html"><em></em>会员中心</a></li>
+			<li class="spacer"></li>
+			<li><a class="topbar topbar4" href=""><em></em>帮助中心</a></li>
+       </ul>
+    </div>
+</div>
+<div id="topActive" class="top-active">
+        
+</div>
+<div id="header" class="page-header">
+    <div class="inner-wrap">
+        <div class="header-left fl">
+            <div class="logo"><a href="./"><img src="http://dev.haitaotiantang.com/public/images/ef/b0/08/5e46ca568c021fec8c62f093c8c187a0341e518b.png?1477539988#w" alt=""></a></div>
+        </div>
+        <div class="header-main fl">
+            <div class="searchbar">
+  <form action="/index.php/search-result.html" method="post" id="searchbar_10" async="false">
+    <input class="x-input" type="text" name="search_keywords" id="dom_el_bca5dd0"><button type="submit">搜索</button>
+  </form>
+  <div class="hots">
+    <span>热门搜索：</span>
+        <a href="http://shop.haitaotiantang.com/index.php/gallery.html?scontent=n,%E9%9B%85%E8%AF%97%E5%85%B0%E9%BB%9B">雅诗兰黛</a>
+        <i>|</i>    
+        <a href="http://shop.haitaotiantang.com/index.php/gallery.html?scontent=n,%E5%8F%AF%E8%8E%B1%E4%B8%9D">可莱丝</a>
+        <i>|</i>    
+        <a href="#">雅培</a><i>|</i> 
+        <a href="http://shop.haitaotiantang.com/index.php/gallery.html?scontent=n,%E7%BE%8E%E8%B5%9E%E8%87%A3">美赞臣</a><i>|</i> 
+        <a href="#">兰蔻</a><i>|</i> 
+        <a href="#">馥蕾诗</a>
+      </div>
+</div>
+
+        </div>
+        <div class="header-right fr">
+            
+        </div>
+    </div>
+</div>
+<div id="nav" class="page-nav">
+    <div class="inner-wrap">
+        <div class="nav-left fl">
+            
+
+
+
+
+
+<div class="category-wrap" id="categoryWrap">
+  <a class="category" href="javascript:;">商品分类</a>
+
+   <ul class="category-list-nav">
+        <li class="category-list-item">
+            <dl>
+                <dt class="category-list-item-dt"><span class="category-list-item-icon1"></span><span>美妆个护</span></dt>
+                <dd class="category-list-dd">
+                    <span><a href="#">面部护肤</a> </span><span><a href="#">洗发护发</a> </span>
+                    <div class="category-list-third">
+                        <div class="category-list-third-item clearfix">
+                            <table>
+                                <tbody><tr>
+                                    <td><div class="category-list-third-title">面部护肤<i class="category-third-topic"></i></div></td>
+                                    <td>
+                                        <div class="category-list-third-content">
+                                            <span><a href="#">卸妆/清洁</a> </span>
+                                            <span><a href="#">化妆水/爽肤水</a> </span>
+                                            <span><a href="#">乳液/面霜</a> </span>
+                                            <span><a href="#"> 眼部护理</a> </span>
+                                            <span><a href="#">唇部护理</a> </span>
+                                            <span><a href="#">面膜</a> </span>
+                                            <span><a href="#">套装</a> </span>
+                                            <span><a href="#">精华</a> </span>
+                                            <span><a href="#">防晒/隔离</a> </span>
+                                            <span><a href="#">美容仪</a> </span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><div class="category-list-third-title">洗发护发<i class="category-third-topic"></i></div></td>
+                                    <td>
+                                        <div class="category-list-third-content">
+                                            <span><a href="#">洗发</a> </span>
+                                            <span><a href="#">护发</a> </span>
+                                            <span><a href="#">乳液/面霜</a> </span>
+                                            <span><a href="#"> 眼部护理</a> </span>
+                                            <span><a href="#">唇部护理</a> </span>
+                                            <span><a href="#">面膜</a> </span>
+                                            <span><a href="#">套装</a> </span>
+                                            <span><a href="#">精华</a> </span>
+                                            <span><a href="#">防晒/隔离</a> </span>
+                                            <span><a href="#">美容仪</a> </span>
+                                            <span><a href="#">护发</a> </span>
+                                        </div>
+                                    </td>
+                                </tr>
+                               <!--  <tr>
+                                    <td class="category-third-bottom" colspan="2"><span class="category-third-img"><img src="../../images/category-third-img.png"></span></td>
+                                </tr> -->
+                            </tbody></table>
+                        </div>
+                    </div>
+                </dd>
+                <dd class="category-list-dd">
+                    <span><a href="#">口腔护理</a> </span><span><a href="#">身体护理</a> </span><span><a href="#">女性护理</a> </span>
+                    <div class="category-list-third">
+                        <div class="category-list-third-item clearfix">
+                            <table>
+                                <tbody><tr>
+                                    <td><div class="category-list-third-title">面部护肤<i class="category-third-topic"></i></div></td>
+                                    <td>
+                                        <div class="category-list-third-content">
+                                            <span><a href="#">卸妆/清洁2</a> </span>
+                                            <span><a href="#">化妆水/爽肤水3</a> </span>
+                                            <span><a href="#">乳液/面霜</a> </span>
+                                            <span><a href="#"> 眼部护理</a> </span>
+                                            <span><a href="#">唇部护理</a> </span>
+                                            <span><a href="#">面膜</a> </span>
+                                            <span><a href="#">套装</a> </span>
+                                            <span><a href="#">精华</a> </span>
+                                            <span><a href="#">防晒/隔离</a> </span>
+                                            <span><a href="#">美容仪</a> </span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><div class="category-list-third-title">洗发护发<i class="category-third-topic"></i></div></td>
+                                    <td>
+                                        <div class="category-list-third-content">
+                                            <span><a href="#">洗发</a> </span>
+                                            <span><a href="#">护发</a> </span>
+                                            <span><a href="#">乳液/面霜</a> </span>
+                                            <span><a href="#"> 眼部护理</a> </span>
+                                            <span><a href="#">唇部护理</a> </span>
+                                            <span><a href="#">面膜</a> </span>
+                                            <span><a href="#">套装</a> </span>
+                                            <span><a href="#">精华</a> </span>
+                                            <span><a href="#">防晒/隔离</a> </span>
+                                            <span><a href="#">美容仪</a> </span>
+                                            <span><a href="#">护发</a> </span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!-- <tr>
+                                    <td class="category-third-bottom" colspan="2"><span class="category-third-img"><img src="http://shop.haitaotiantang.com/themes/ecstore/widgets/goods_category/images/category-third-img.png"></span></td>
+                                </tr> -->
+                            </tbody></table>
+                        </div>
+                    </div>
+                </dd>
+                <dd class="category-list-dd">
+                    <span><a href="#">香水</a> </span><span><a href="#">彩妆</a> </span><span><a href="#">男士专区</a> </span>
+                </dd>
+            </dl>
+        </li>
+       <li class="category-list-item">
+           <dl>
+               <dt class="category-list-item-dt"><span class="category-list-item-icon2"></span><span>母婴用品</span></dt>
+               <dd class="category-list-dd">
+                   <span><a href="#">奶粉辅食</a> </span><span><a href="#">儿童护理</a></span><span><a href="#">尿裤湿巾</a></span>
+               </dd>
+               <dd class="category-list-dd">
+                   <span><a href="#">喂养用品</a> </span><span><a href="#">妈妈专区</a>
+               </span></dd>
+               <dd class="category-list-dd">
+                   <span><a href="#">出行工具</a> </span><span><a href="#">文具玩具</a>
+               </span></dd>
+           </dl>
+       </li>
+       <li class="category-list-item">
+           <dl>
+               <dt class="category-list-item-dt"><span class="category-list-item-icon3"></span><span>营养保健</span></dt>
+               <dd class="category-list-dd">
+                   <span><a href="#">营养健康</a> </span>
+               </dd>
+               <dd class="category-list-dd">
+                   <span><a href="#">美容美颜</a> </span><span><a href="#">美体塑身</a>
+               </span></dd>
+           </dl>
+       </li>
+       <li class="category-list-item">
+           <dl>
+               <dt class="category-list-item-dt"><span class="category-list-item-icon4"></span><span>轻奢优选</span></dt>
+               <dd class="category-list-dd">
+                   <span><a href="#">箱包</a> </span><span><a href="#">配饰</a></span>
+               </dd>
+           </dl>
+       </li>
+    </ul>
+</div>
+
+<script>
+//    原生代码
+//    (function(){
+//        var _timer = null;
+//        $('categoryWrap').addEvents({
+//            'mouseenter':function(){
+//                clearTimeout(_timer);
+//                this.getElements('.category-list').setStyle('display','block');
+//            },
+//            'mouseleave':function(){
+//                var _this = this;
+//                _timer = setTimeout(function(){
+//                    _this.getElements('.category-list').setStyle('display','none');
+//                    _this.getElements('.category-sub').setStyle('display','none');
+//                    _this.getElements('.category-list .item').removeClass('hover');
+//                },200);
+//            }
+//        });
+//        $('categoryWrap').getElements('.category-list .item').each(function(el){
+//            el.addEvents({
+//                'mouseenter':function(){
+//                    this.addClass('hover');
+//                    this.getElements('.category-sub').setStyle('display','block');
+//                },
+//                'mouseleave':function(){
+//                    this.removeClass('hover');
+//                    this.getElements('.category-sub').setStyle('display','none');
+//                }
+//            });
+//        });
+//    })()
+
+(function () {
+    var _timer = null;
+    $('categoryWrap').addEvents({
+        'mouseenter': function () {
+            clearTimeout(_timer);
+            this.getElements('.category-list-nav').setStyle('display','block');
+        },'mouseleave':function(){
+            var _this = this;
+            _timer = setTimeout(function(){
+                _this.getElements('.category-list-nav').setStyle('display','none');
+//                _this.getElements('.category-list-third').setStyle('display','none');
+            });
+        }
+    });
+    $$('.category-list-dd').addEvents({
+        'mouseenter':function(){
+            this.getElements('.category-list-third').setStyle('display','block');
+        },'mouseleave':function(){
+            this.getElements('.category-list-third').setStyle('display','none');
+        }
+    })
+
+})()
+
+
+</script>
+        </div>
+        <div class="nav-main fl">
+            <ul class="nav-wrap">
+	           <li class="nav-item on"><a href="#">热销单品</a></li>
+                <li class="nav-item "><a href="#">最新商品</a></li>
+                <li class="nav-item "><a href="#">品牌馆</a></li>
+                <li class="nav-item "><a href="#">线下保税店</a></li>
+                <li class="nav-item "><a href="#">招商加盟</a></li>
+            </ul>        
+        </div>
+        <div class="nav-right fr">
+            <div class="minicart-wrap" id="minicart_14">
+    <div class="minicart">
+        <em></em>
+        <a href="/index.php/cart.html">我的购物车</a>
+        <i>&gt;</i>
+        <div class="minicart-count"><span>0</span></div>
+    </div>
+    <div class="minicart-box"></div>
+</div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+    <!--===================内容width: 1225px===============================-->
+    <div class="join-header">
+    	<img src="img/join_logo.png"/>
+    </div>
+    
+    <div class="join-wrap">
+     	<div class="join-top">
+     		<img src="img/join_expense.png"/>
+     	</div>
+     	<div class="join-question">
+     		<img src="img/join_question.png"/>
+     	</div>
+     	<div class="join-bigGoods">
+     		<img src="img/join_big_goods.png"/>
+     	</div>
+     	<div class="join-kind">
+     		<img src="img/join_kind.png"/>
+     	</div>
+     	<div class="join-us">
+     		<img src="img/join_us.png"/>
+     	</div>
+     	<a href="mailto:franchise@haitaotiantang.com" class="join-contact">
+     		<img src="img/join_email.png"/>
+     	</a>
+     	<div class="join-submit">
+     		<div class="join_purple">
+     			<img src="img/join_purple.png" />
+     		</div>
+     		<form method="post" autocomplete="off" class="join-usr-form clearfix" name="_form_intent" id="intent_form" onSubmit="return false">
+     			<table>
+     				<tr>
+	     				<th>姓名</th>
+	     				<td><input type="text" name="username" id="usr-name" required="required"/></td>
+     				</tr>
+     				<tr>
+	     				<th>电话</th>
+	     				<td><input type="text" name="tel" id="usr-number" maxlength="11" required="required"/></td>
+     				</tr>
+     				<tr>
+	     				<th>邮箱</th>
+	     				<td><input type="text" name="email" id="usr-email"/></td>
+     				</tr>
+     				<tr>
+	     				<th>城市</th>
+	     				<td><input type="text" name="city" id="usr-city"/></td>
+     				</tr>
+     			</table>
+     			<input type="button" value="提交"  id="intent_form_btn" class="user-sub"/>
+     		</form>     		
+        <script type="text/javascript">
+            window.addEvent('domready', function() {
+                $('intent_form_btn').addEvent('click', function(e){
+                    var name = $('usr-name').value.trim();
+                    var mobile = $('usr-number').value.trim();
+                    var email = $('usr-email').value.trim();
+                    var city = $('usr-city').value.trim();
+                    if(name === '') {
+                        alert ('姓名不能为空!');
+                        document.getElementById('usr-name').focus();
+                        return false;
+                    }
+                    if(mobile === '') {
+                        alert ('电话不能为空!');
+                        document.getElementById('usr-number').focus();
+                        return false;
+                    }
+                    if(email === '') {
+                        alert ('邮箱不能为空!');
+                        document.getElementById('usr-email').focus();
+                        return false;
+                    }
+                    
+                    if(city === '') {
+                        alert ('城市不能为空!');
+                        document.getElementById('usr-city').focus();
+                        return false;
+                    }
+                    var url="http://101.200.81.5/contact";
+                    // var postArgs = $('intent_form').toQueryString();
+                    new Request({
+                        url: url, 
+                        method: "post",
+                        data: {
+                            name: name,
+                            mobile: mobile,
+                            email: email,
+                            city: city,
+                            source: 'pc',
+                        },
+                        onRequest: function()
+                        {
+                            console.log('loading...');
+                        },
+                        onSuccess: function(data)
+                        {
+                            // 发邮件
+                            var dataObj=eval("("+data+")");
+                            if(dataObj.status == 200) {
+                                alert('发送成功！');
+                            }
+                            // alert(responseText.message);
+                            // console.log(responseText);
+                            // console.log(message);
+                            console.log(dataObj.message);
+                            // return false;
+                            // wlocation.reload();
+                            window.location.reload();
+                        },
+                        onFailure: function() 
+                        {
+                            alert("发送失败，请稍后再试。");
+                        }
+                    }).send();
+                    // window.location.reload();
+                });
+            })
+        </script>
+     		<div class="join-win">
+     			<img src="img/join_cooperation.png" />
+     		</div>
+     	</div>
+	</div>
+	<div class="join-footer">
+     	<img src="img/join_footer.png"/>
+    </div>
+     
+     
+     
+     
+     <!--=====================页面内容结束=====================-->
+     
+     
+     
+    <div id="footer" class="page-footer">
+    <div class="footer-serves-wrap">
+        <div class="footer-serves">
+            <dl>
+                <i class="bg_1"></i>
+                <dt>100%正品保障</dt>
+            </dl>
+            <dl>
+                <i class="bg_2"></i>
+                <dt>海外直邮</dt>
+            </dl>
+            <dl>
+                <i class="bg_3"></i>
+                <dt>保税仓发货</dt>
+            </dl>
+            <dl class="last">
+                <i class="bg_4"></i>
+                <dt>七天无理由退货</dt>
+            </dl>
+        </div>
+    </div>
+    <div class="footer-nav-wrap">
+        <div class="footer-nav clearfix">
+            <ul class="nav-list">
+                <li>
+                    <dl class="content-list">
+                      <dt class="content-title"> 新手入门  </dt>
+                          <dd class="node-index content-item">
+                        <a href="http://shop.haitaotiantang.com/index.php/article-xinshourumen-60.html" title="会员注册">会员注册</a>
+                        </dd>
+                          <dd class="node-index content-item">
+                        <a href="http://shop.haitaotiantang.com/index.php/article-xinshourumen-61.html" title="购物流程">购物流程</a>
+                        </dd>
+                          <dd class="node-index content-item">
+                        <a href="http://shop.haitaotiantang.com/index.php/article-xinshourumen-62.html" title="会员积分">会员积分</a>
+                        </dd>
+                          <dd class="node-index content-item">
+                        <a href="http://shop.haitaotiantang.com/index.php/article-xinshourumen-63.html" title="会员政策">会员政策</a>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl class="content-list">
+                      <dt class="content-title"> 售后政策  </dt>
+                          <dd class="node-index content-item">
+                        <a href="http://shop.haitaotiantang.com/index.php/article-shouhouece-64.html" title="售后服务">售后服务</a>
+                        </dd>
+                          <dd class="node-index content-item">
+                        <a href="http://shop.haitaotiantang.com/index.php/article-shouhouece-65.html" title="常见问题">常见问题</a>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl class="content-list">
+                      <dt class="content-title">
+                      帮助中心  </dt>
+                          <dd class="node-index content-item">
+                        <a href="http://shop.haitaotiantang.com/index.php/article-bangzhuzhongxin-66.html" title="发货">发货</a>
+                        </dd>
+                          <dd class="node-index content-item">
+                        <a href="http://shop.haitaotiantang.com/index.php/article-bangzhuzhongxin-67.html" title="物流">物流</a>
+                        </dd>
+                          <dd class="node-index content-item">
+                        <a href="http://shop.haitaotiantang.com/index.php/article-bangzhuzhongxin-68.html" title="清关">清关</a>
+                        </dd>
+                          <dd class="node-index content-item">
+                        <a href="http://shop.haitaotiantang.com/index.php/article-bangzhuzhongxin-69.html" title="运费">运费</a>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl class="content-list">
+                      <dt class="content-title">
+                      关于我们  </dt>
+                          <dd class="node-index content-item">
+                        <a href="http://shop.haitaotiantang.com/index.php/article-guanyuwomen-70.html" title="公司介绍">公司介绍</a>
+                        </dd>
+                          <dd class="node-index content-item">
+                        <a href="http://shop.haitaotiantang.com/index.php/article-guanyuwomen-71.html" title="联系我们">联系我们</a>
+                        </dd>
+                          <dd class="node-index content-item">
+                        <a href="http://shop.haitaotiantang.com/index.php/article-guanyuwomen-72.html" title="商务合作">商务合作</a>
+                        </dd>
+                          <dd class="node-index content-item">
+                        <a href="http://shop.haitaotiantang.com/index.php/article-guanyuwomen-73.html" title="工作机会">工作机会</a>
+                        </dd>
+                    </dl>
+                </li>
+                <li class="last">
+                    
+                </li>
+            </ul>
+            <div class="footer-code">
+                <dl>
+                   <!--  <dt><img src="img/phone-code.png" alt=""></dt> -->
+                    <dd><p>手机版二维码</p></dd>
+                </dl>
+                <dl>
+                   <!--  <dt><img src="img/wx-code.png" alt=""></dt> -->
+                    <dd><p>微信二维码</p></dd>
+                </dl>
+                
+            </div>
+        </div>
+    </div>
+    <div class="footer-copy"></div>
+</body>
+</html>

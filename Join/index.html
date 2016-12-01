@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>跨境电商保税店加盟|进口商品保税店加盟—海淘天堂保税店连锁品牌</title>
+		<meta name="description" content="跨境电商这么火,找货难不知怎么下手?加盟海淘天堂保税店，提供来自全球二十多个国家数万种商品，加盟半年做老板!门槛低，利润高，总部全程帮扶，轻松赚钱!">
+		<meta name="apple-mobile-web-app-title" content="EBUY"/>
+		<meta name="keywords" content="跨境电商|保税店加盟|海淘加盟|海外代购供货平台">
+    	<meta name="apple-mobile-web-app-capable" content="yes"/>
+    	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    	<meta name="format-detection" content="telephone=no, address=no">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		
+	</head>
+	<body>
+		
+    <div class="join-box">
+	    <div class="join-wrap">
+	     	<!--内容-->
+	     	<div class="join-header">
+	    		<img src="img/join_logo.png"/>
+	    	</div>
+	     	<div class="join-top">
+	     		<img src="img/join_expense.png"/>
+	     	</div>
+	     	<a href="javascript:void(0)" class="join-intention">
+	     		<img src="img/join_intention.png"/>
+	     	</a>
+	     	<div class="join-question">
+	     		<img src="img/join_question.png"/>
+	     	</div>
+	     	<div class="join-bigGoods">
+	     		<img src="img/join_big_goods.png"/>
+	     	</div>
+	     	<div class="join-kind">
+	     		<img src="img/join_kind.png"/>
+	     	</div>
+	     	<div class="join-us">
+	     		<img src="img/join_us.png"/>
+	     	</div>
+	     	
+	     	
+	     	<a href="mailto:franchise@haitaotiantang.com" class="join-contact">
+	     		<img src="img/join_email.png"/>
+	     	</a>
+	     	
+	     	<div class="join-footer">
+	     		<img src="img/join_footer.png"/>
+	    	</div>
+	     </div>
+			<!--表单-->
+	 	<div class="form-wrap"></div>
+ 		<div class="join-submit">
+     		<h3>提交意向</h3>
+     		<form method="post" action ="" autocomplete="off" class="join-usr-form clearfix" name="_form_intent" id="intent_form">
+ 				<div class="join-table">
+ 					<div class="join-tb clearfix">
+	     				<p>姓名</p>
+	     				<input type="text" name="name" id="usr-name" required="required"/>
+	 				</div>
+	 				<div class="join-tb clearfix">
+	     				<p>电话</p>
+	     				<input type="text" name="mobile" id="usr-number" maxlength="11" required="required"/>
+	 				</div>
+	 				<div class="join-tb clearfix">
+	     				<p>邮箱</p>
+	     				<input type="text" name="email" id="usr-email"/>
+	 				</div>
+	 				<div class="join-tb clearfix">
+	     				<p>城市</p>
+	     				<input type="text" name="city" id="usr-city"/>
+	 				</div>
+	     			<input type="button" id="intent_form_btn" class="user-sub" value="提交">
+ 				</div>
+     		</form>
+     	</div>
+	     	<!--弹窗-->
+     	<div class="commit-success">
+			<h3>提交成功</h3>
+			<div class="commit-con">
+				<div class="pic"><img src="img/join_sucess.png"/></div>
+				<p>您的资料提交成功</p>
+				<p>工作人员将尽快与您联系</p>
+			</div>
+			<input type="button" class="commint-close" value="关闭" />
+		</div>
+	</div>
+
+	</body>
+	<script src="js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">  
+        document.documentElement.style.fontSize = innerWidth/15 +"px";
+        window.onresize =function(){
+            document.documentElement.style.fontSize = innerWidth/15 + "px";
+     	}
+	</script>
+	<script type="text/javascript">
+		$(function(){
+			var toggleGroup = $('.form-wrap,.join-submit');
+			var closeGroup = $('.form-wrap,.commit-success,.join-submit');
+			$('.join-intention').on('touchstart',function(){
+				toggleGroup.show();
+			})
+			$('.form-wrap').on('touchstart',function(){
+				closeGroup.hide();
+			});
+			$('.commint-close').on('touchstart',function(){
+				closeGroup.hide();
+			});
+		})
+	</script>
+	<!--获取用户信息-->
+	<script type="text/javascript">
+            $('#intent_form_btn').on('touchstart',function(){
+                var name = $('#usr-name').val();
+                var mobile = $('#usr-number').val();
+                var email = $('#usr-email').val();
+                var city = $('#usr-city').val();
+                if(name === '') {
+                    alert ('姓名不能为空!');
+                    $('#usr-name').trigger('focus');
+                    return false;
+                }
+                if(mobile === '') {
+                    alert ('电话不能为空!');
+                     $('#usr-number').trigger('focus');
+                    return false;
+                }
+                if(email === '') {
+                    alert ('邮箱不能为空!');
+                     $('#usr-email').trigger('focus');
+                    return false;
+                }
+                
+                if(city === '') {
+                    alert ('城市不能为空!');
+                     $('#usr-city').trigger('focus');
+                    return false;
+                }
+                var url="http://101.200.81.5/contact";
+                $.ajax({
+                    url: url, 
+                    type: "post",
+                    dataType:'json',
+                    data:({
+                        name: name,
+                        mobile: mobile,
+                        email: email,
+                        city: city,
+                        source: 'wechat'
+                    }),
+                   success: function(data)
+                    {
+                        if(data.status == 200) {
+                            alert('发送成功！');
+                        }
+                        console.log(data.message);
+                        $('.commit-success').show();
+                    },
+                    error: function() 
+                    {
+                        alert("发送失败，请稍后再试。");
+                    }
+                })
+            });
+    </script>
+</html>
